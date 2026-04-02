@@ -1,0 +1,52 @@
+body {
+  color: #fff;
+  background-color: #000;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-family: "Exo 2", sans-serif;
+}
+
+h1 {
+  font-size: xx-large;
+  color: #7b9cd1;
+}
+
+h2 {
+  font-size: x-large;
+  color: #333b47;
+}
+
+h3 {
+  font-size: large;
+  color: #333b47;
+  font-weight: lighter;
+  margin-top: 4px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #333b47;
+}
+
+.titleBox {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.gd,
+.title {
+  font-size: xx-large;
+  font-weight: bold;
+  margin: 0;
+}
+
+.gd {
+  color: #ffc800;
+}
+
+.title {
+  color: #4a6678;
+}

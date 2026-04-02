@@ -1,0 +1,53 @@
+table {
+  table-layout: fixed;
+}
+
+th,
+td {
+  text-align: left;
+  font-size: medium;
+  font-weight: lighter;
+}
+
+th {
+  color: #414b59;
+}
+
+#numColumn {
+  width: 40px;
+}
+
+#nameColumn {
+  width: 200px;
+}
+
+#placementColumn {
+  width: 100px;
+}
+
+#bestColumn {
+  width: 100px;
+}
+
+#attemptsColumn {
+  width: 150px;
+}
+
+#traitsColumn {
+  width: 400px;
+}
+
+#reasonColumn {
+  width: 400px;
+}
+
+.divider td {
+  color: #131921;
+  font-size: x-large;
+  font-weight: bolder;
+  width: auto;
+  padding-left: 50px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background: linear-gradient(to right, rgb(117, 255, 223), transparent);
+}
