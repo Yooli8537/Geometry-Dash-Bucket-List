@@ -15,19 +15,19 @@ h1 {
 
 h2 {
   font-size: x-large;
-  color: #333b47;
+  color: #43536b;
 }
 
 h3 {
   font-size: large;
-  color: #333b47;
+  color: #43536b;
   font-weight: lighter;
   margin-top: 4px;
 }
 
 hr {
   border: none;
-  border-top: 1px solid #333b47;
+  border-top: 1px solid #43536b;
 }
 
 .titleBox {

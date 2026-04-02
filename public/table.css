@@ -7,6 +7,8 @@ td {
   text-align: left;
   font-size: medium;
   font-weight: lighter;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
 }
 
 th {
@@ -14,51 +16,62 @@ th {
 }
 
 #numColumn {
-  width: 40px;
+  width: 3%;
 }
 
 #nameColumn {
-  width: 200px;
+  width: 10%;
 }
 
 #placementColumn {
-  width: 100px;
+  width: 5%;
 }
 
 #bestColumn {
-  width: 100px;
+  width: 5%;
 }
 
 #attemptsColumn {
-  width: 150px;
+  width: 7%;
 }
 
 #traitsColumn {
-  width: 400px;
+  width: 18%;
 }
 
 #reasonColumn {
-  width: 400px;
+  width: 32%;
 }
 
-.firstDivider {
-  color: #131921;
+.divider {
   font-size: x-large;
   font-weight: bolder;
-  width: auto;
-  padding-left: 50px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-left: 3%;
+  padding-top: 0.8%;
+  padding-bottom: 0.8%;
+}
+
+#firstDivider {
+  color: #131921;
   background: linear-gradient(to right, rgb(117, 255, 223), transparent);
 }
 
-.finalDivider {
+#beginnerDivider {
   color: #131921;
-  font-size: x-large;
-  font-weight: bolder;
-  width: auto;
-  padding-left: 50px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  background: linear-gradient(to right, rgb(117, 255, 223), transparent);
+  background: linear-gradient(to right, rgb(57, 219, 71), transparent);
+}
+
+#advancedDivider {
+  color: #131921;
+  background: linear-gradient(to right, rgb(255, 221, 0), transparent);
+}
+
+#listDivider {
+  color: #131921;
+  background: linear-gradient(to right, rgb(255, 119, 0), transparent);
+}
+
+#finalDivider {
+  color: #131921;
+  background: linear-gradient(to right, rgb(255, 0, 0), transparent);
 }
