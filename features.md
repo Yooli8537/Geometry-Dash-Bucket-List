@@ -38,7 +38,11 @@
 -- Red = Final Goals / Final Demons
 
 - Buttons for CRUD
+-- Add new level to list
+-- Update level
+-- Easy update for things like attempt counts & bests
+-- Removing a level
 
-- Second List to keep track of all Demons beaten, including ones not on the List.
+- Second List to keep track of all Demons beaten, including ones not on the Bucket List.
 
 ## Added

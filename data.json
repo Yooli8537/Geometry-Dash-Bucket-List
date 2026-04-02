@@ -1,1 +1,36 @@
-[]
+[
+  {
+    "game_id": 61079355,
+    "num": 1,
+    "name": "Acu",
+    "aredl_placement": 1390,
+    "best": 94,
+    "startpos_attempts": 0,
+    "attempts": 13347,
+    "traits": ["fast", "flowy", "modern"],
+    "reason": "Popular first demon, close to finishing",
+    "screenshot_path": "/images/tmp.png",
+    "starting_date": "02.04.2025",
+    "ending_date": null,
+    "enjoyment_rating": null,
+    "subcategory": "firstExtremes",
+    "lists": ["bucket"]
+  },
+  {
+    "game_id": 68668045,
+    "num": 2,
+    "name": "Congregation",
+    "aredl_placement": 227,
+    "best": 13,
+    "startpos_attempts": 5000,
+    "attempts": 5000,
+    "traits": ["slow", "timings", "memory", "long"],
+    "reason": "Very fun, fast progress through Kugelblitz",
+    "screenshot_path": "/images/tmp.png",
+    "starting_date": "30.03.2026",
+    "ending_date": null,
+    "enjoyment_rating": null,
+    "subcategory": "firstExtremes",
+    "lists": ["bucket"]
+  }
+]
