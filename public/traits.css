@@ -1,0 +1,41 @@
+.trait {
+  display: inline-block;
+  padding: 0.5px 5px;
+  border-radius: 3px;
+  margin-right: 3px;
+}
+
+.nineCricles,
+.classic,
+.flowy,
+.ship,
+.cube,
+.modern,
+.vibes,
+.seizure {
+  color: #597094;
+  background-color: #1a1e24;
+  border: 2px solid #2f415c;
+}
+
+.timings,
+.memory,
+.awkward,
+.slow,
+.gimmiky {
+  color: #06963e;
+  background-color: #062612;
+  border: 2px solid #09612b;
+}
+
+.duals,
+.spam,
+.fast,
+.long,
+.intense,
+.consistency,
+.wave {
+  color: #a10303;
+  background-color: #450606;
+  border: 2px solid #870808;
+}
