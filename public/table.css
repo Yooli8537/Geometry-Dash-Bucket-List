@@ -41,7 +41,18 @@ th {
   width: 400px;
 }
 
-.divider td {
+.firstDivider {
+  color: #131921;
+  font-size: x-large;
+  font-weight: bolder;
+  width: auto;
+  padding-left: 50px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background: linear-gradient(to right, rgb(117, 255, 223), transparent);
+}
+
+.finalDivider {
   color: #131921;
   font-size: x-large;
   font-weight: bolder;
