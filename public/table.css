@@ -75,3 +75,7 @@ th {
   color: #131921;
   background: linear-gradient(to right, rgb(255, 0, 0), transparent);
 }
+
+.tableRow {
+  cursor: pointer;
+}

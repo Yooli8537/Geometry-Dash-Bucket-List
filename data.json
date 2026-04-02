@@ -5,18 +5,18 @@
     "name": "Acu",
     "aredl_placement": 1390,
     "best": 94,
-    "startpos_attempts": 0,
     "attempts": 13347,
+    "startpos_attempts": 0,
     "traits": ["fast", "flowy", "modern"],
     "reason": "Popular first demon, close to finishing",
-    "screenshot_path": "/images/tmp.png",
     "starting_date": "02.04.2025",
     "ending_date": null,
     "enjoyment_rating": null,
     "subcategory": "firstExtremes",
     "lists": ["bucket"],
     "song": "Epilogue - Creo",
-    "song_id": 723714
+    "song_id": 723714,
+    "screenshot_path": "/images/tmp.png"
   },
   {
     "game_id": 68668045,
@@ -24,17 +24,17 @@
     "name": "Congregation",
     "aredl_placement": 227,
     "best": 13,
-    "startpos_attempts": 5000,
     "attempts": 5000,
+    "startpos_attempts": 5000,
     "traits": ["slow", "timings", "memory", "long"],
     "reason": "Very fun, fast progress through Kugelblitz",
-    "screenshot_path": "/images/tmp.png",
     "starting_date": "30.03.2026",
     "ending_date": null,
     "enjoyment_rating": null,
     "subcategory": "firstExtremes",
     "lists": ["bucket"],
     "song": "Purgatori - KORAII",
-    "song_id": 895761
+    "song_id": 895761,
+    "screenshot_path": "/images/tmp.png"
   }
 ]

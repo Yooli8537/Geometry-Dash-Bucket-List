@@ -2,24 +2,6 @@
 
 ## Planned
 
-- JSON Structure that saves all Data
--- In-game ID
--- # (first, second demon, etc.)
--- Name
--- AREDL Placement / Estimation for Unrated & own levels
--- Startpos Attempts
--- Attempts from 0
--- Traits
--- Selection Reason
--- Screenshot Path (for dedicated Page background)
--- Starting Date
--- Ending Date
--- Enjoyment Rating / 10
--- Subcategory
--- Lists it's shown on
-
-- Subcategories shown on the Site
-
 - Info shown on Site:
 -- #
 -- Name
@@ -46,3 +28,22 @@
 - Second List to keep track of all Demons beaten, including ones not on the Bucket List.
 
 ## Added
+
+- JSON Structure that saves all Data
+-- In-game ID
+-- # (first, second demon, etc.)
+-- Name
+-- AREDL Placement / Estimation for Unrated & own levels
+-- Best
+-- Startpos Attempts
+-- Attempts from 0
+-- Traits
+-- Selection Reason
+-- Screenshot Path (for dedicated Page background)
+-- Starting Date
+-- Ending Date
+-- Enjoyment Rating / 10
+-- Subcategory
+-- Lists it's shown on
+
+- Subcategories shown on the Site
