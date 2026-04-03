@@ -1,0 +1,26 @@
+.formLayout {
+  display: flex;
+  gap: 5%;
+}
+
+.formInputs {
+  width: 85%;
+}
+
+#traitSelector {
+  width: 10%;
+}
+.traitOption {
+  display: inline-block;
+  padding: 0.5px 5px;
+  border-radius: 3px;
+  margin-right: 3px;
+  color: #597094;
+  background-color: #1a1e24;
+  border: 2px solid #2f415c;
+  opacity: 0.4;
+}
+
+.selected {
+  opacity: 1;
+}

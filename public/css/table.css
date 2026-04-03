@@ -51,6 +51,11 @@ th {
   padding-bottom: 0.8%;
 }
 
+#insaneDivider {
+  color: #131921;
+  background: linear-gradient(to right, rgb(156, 94, 255), transparent);
+}
+
 #firstDivider {
   color: #131921;
   background: linear-gradient(to right, rgb(117, 255, 223), transparent);

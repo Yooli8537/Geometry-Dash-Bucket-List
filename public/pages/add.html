@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="../traits.css">
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/form.css" <link
+        href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700&display=swap" rel="stylesheet">
     <title>Add Level</title>
     <script src="../js/addLevel.js" defer></script>
     <link rel="icon" type="image/x-icon" href="../favicon.ico">
@@ -19,12 +19,43 @@
     </div>
     <h3>Adding Level</h3>
     <hr>
-    <form id="addLevelForm">
-        <input type="number" id="levelGameId" placeholder="In-Game ID">
-        <input type="text" id="levelName" placeholder="Name">
-        <input type="number" id="placement" placeholder="AREDL Placement">
-        <input type="number"
-    </form>
+
+    <div class="formLayout">
+        <div class="formInputs">
+            <form id="addLevelForm">
+                <input type="number" id="levelNum" placeholder="#">
+                <input type="number" id="levelGameId" placeholder="In-Game ID">
+                <input type="text" id="levelName" placeholder="Name">
+                <input type="number" id="placement" placeholder="AREDL Placement">
+                <input type="number" id="best" placeholder="Current Best">
+                <input type="number" id="attempts" placeholder="Attempts from 0">
+                <input type="number" id="startposAttempts" placeholder="Startpos attempts">
+                <input type="text" id="reason" placeholder="Selection Reason">
+                <input type="date" id="starting_date" placeholder="Starting Date">
+                <input type="date" id="ending_date" placeholder="Ending Date">
+                <input type="number" id="enjoyment" placeholder="Enjoyment Rating / 10">
+                <select id="subcategory">
+                    <option value="insaneDemons">Insane Demons</option>
+                    <option value="firstExtremes">First Extremes</option>
+                    <option value="beginnerExtremes">Beginner Extremes</option>
+                    <option value="advancedExtremes">Advanced Extremes</option>
+                    <option value="listExtremes">List Extremes</option>
+                    <option value="finalGoals">Final Goals</option>
+                </select>
+                <select id="lists" multiple>
+                    <option value="bucketList">Bucket List</option>
+                    <option value="beatenList">Beaten Demons List</option>
+                </select>
+                <input type="text" id="songName" placeholder="Song Name">
+                <input type="number" id="songId" placeholder="Song ID">
+                <input type="text" id="imagePath" placeholder="Image File (acu.png)">
+            </form>
+        </div>
+        <div id="traitSelector">
+            <h3>Traitselector</h3>
+            <div class="traitOption" data-value="fast">Fast</div>
+        </div>
+    </div>
 </body>
 
 </html>

@@ -23,10 +23,10 @@ async function loadLevels() {
     name.textContent = level.name;
     // AREDL placement
     const placement = document.createElement("td");
-    placement.textContent = level.aredl_placement;
+    placement.textContent = "#" + level.aredl_placement;
     // Best
     const best = document.createElement("td");
-    best.textContent = level.best;
+    best.textContent = level.best + "%";
     // Total Attempts
     const attempts = document.createElement("td");
     attempts.textContent = level.attempts + level.startpos_attempts;
