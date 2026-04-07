@@ -1,4 +1,5 @@
 const express = require('express');
+const { application, json } = require("express");
 const fs = require('fs');
 const path = require('path');
 
@@ -14,7 +15,9 @@ app.get('/data', (req, res) => {
 });
 
 app.post('/data', (req, res) => {
-  fs.writeFileSync('data.json', JSON.stringify(req.body, null, 2));
+  const data = JSON.parse(fs.readFileSync("data.json", "utf-8"));
+  data.push(req.body);
+  fs.writeFileSync('data.json', JSON.stringify(data, null, 2));
   res.json({ success: true });
 });
 

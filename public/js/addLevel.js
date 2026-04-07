@@ -1,5 +1,3 @@
-const addForm = document.querySelector("#addLevelForm");
-const traitSelector = document.querySelector("#traitSelector");
 const submitButton = document.querySelector("#submitLevelButton");
 const errorMessage = document.querySelector("#errorMessage");
 
@@ -31,6 +29,9 @@ submitButton.addEventListener("click", async (e) => {
   const lists = Array.from(
     document.querySelector("#lists").selectedOptions,
   ).map((option) => option.value);
+  const traits = Array.from(
+    document.querySelectorAll(".traitOption.selected"),
+  ).map((t) => t.dataset.value);
 
   // Checking required Fields
   const requiredFields = [
@@ -41,8 +42,6 @@ submitButton.addEventListener("click", async (e) => {
     { value: best, label: "Best" },
     { value: attempts, label: "Attempts from 0" },
     { value: startposAttempts, label: "Startpos Attempts" },
-    { value: startingDate, label: "Starting Date" },
-    { value: endingDate, label: "Ending Date" },
     { value: reason, label: "Reason" },
     { value: lists, label: "Lists" },
     { value: subcategory, label: "Subcategory" },
@@ -57,15 +56,55 @@ submitButton.addEventListener("click", async (e) => {
     } else if (lists.length < 1) {
       errorMessage.textContent = "Error: No Lists selected.";
       return;
+    } else if (subcategory === "none") {
+      errorMessage.textContent = "Error: No Subcategory selected.";
+      return;
     }
   }
 
   // Checking Values
   if (num < 0) {
-    errorMessage.textContent = "Error: Value {num} has a negative value.";
+    errorMessage.textContent = `Error: Num (${num}) is a negative value.`;
   } else if (gameId < 0) {
-    errorMessage.textContent = "Error: Value {gameId} has a negative value.";
+    errorMessage.textContent = `Error: Game ID (${gameId}) is a negative value.`;
+  } else if (best < 0) {
+    errorMessage.textContent = `Error: Best (${best}) is a negative value.`;
+  } else if (attempts < 0) {
+    errorMessage.textContent = `Error: Attempts (${attempts}) is a negative value.`;
+  } else if (startposAttempts < 0) {
+    errorMessage.textContent = `Error: Startpos Attempts (${startposAttempts}) is a negative value.`;
+  } else if (enjoyment < 0 || enjoyment > 10) {
+    errorMessage.textContent = "Enjoyment must be between 0 and 10";
+  } else if (traits.length < 1 || traits.length > 7) {
+    errorMessage.textContent = `You can only select between one and seven traits.`;
   } else {
     errorMessage.textContent = "No Errors.";
   }
+
+  // Saving Data to JSON
+  const level = {
+    num: num,
+    game_id: gameId,
+    name: name,
+    aredl_placement: placement,
+    best: best,
+    attempts: attempts,
+    startpos_attempts: startposAttempts,
+    enjoyment_rating: enjoyment,
+    starting_date: startingDate,
+    ending_date: endingDate,
+    reason: reason,
+    lists: lists,
+    subcategory: subcategory,
+    song: songName,
+    song_id: songId,
+    screenshot_path: imagePath,
+    traits: traits,
+  };
+
+  await fetch("/data", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(level),
+  });
 });

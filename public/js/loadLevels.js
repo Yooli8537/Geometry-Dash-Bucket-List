@@ -34,7 +34,7 @@ async function loadLevels() {
     best.textContent = level.best + "%";
     // Total Attempts
     const attempts = document.createElement("td");
-    attempts.textContent = level.attempts + level.startpos_attempts;
+    attempts.textContent = Number(level.attempts) + Number(level.startpos_attempts);
     // Traits
     const traits = document.createElement("td");
     const traitsArray = level.traits;
