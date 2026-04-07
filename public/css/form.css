@@ -7,6 +7,11 @@
   width: 75%;
 }
 
+#errorMessage {
+  font-size: large;
+  color: #ff0000;
+}
+
 #traitSelector {
   width: 20%;
 }
@@ -60,15 +65,15 @@ button {
   cursor: pointer;
 }
 
-#levelNum {
+#num {
   width: 5%;
 }
 
-#levelGameId {
+#gameId {
   width: 15%;
 }
 
-#levelName {
+#name {
   width: 20%;
 }
 
