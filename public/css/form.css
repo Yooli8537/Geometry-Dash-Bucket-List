@@ -10,6 +10,7 @@
 #traitSelector {
   width: 20%;
 }
+
 .traitOption {
   display: block;
   width: fit-content;
@@ -21,6 +22,7 @@
   background-color: #1a1e24;
   border: 2px solid #2f415c;
   opacity: 0.4;
+  cursor: pointer;
 }
 
 .selected {
@@ -48,12 +50,22 @@ select {
   vertical-align: top;
 }
 
+button {
+  font-size: medium;
+  color: #b5c8cf;
+  background-color: #1a1e24;
+  border: 1px solid #414b59;
+  margin: 2px;
+  vertical-align: top;
+  cursor: pointer;
+}
+
 #levelNum {
   width: 5%;
 }
 
 #levelGameId {
-  width: 10%;
+  width: 15%;
 }
 
 #levelName {

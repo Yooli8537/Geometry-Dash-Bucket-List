@@ -29,7 +29,7 @@
                 <input type="text" id="levelName" placeholder="Name">
                 <input type="number" id="placement" placeholder="AREDL">
                 <h2>Stats</h2>
-                <input type="number" id="best" placeholder="Current Best">
+                <input type="number" id="best" placeholder="Best">
                 <input type="number" id="attempts" placeholder="Attempts from 0">
                 <input type="number" id="startposAttempts" placeholder="Startpos attempts">
                 <input type="number" id="enjoyment" placeholder="Enjoyment">
@@ -54,6 +54,8 @@
                 <input type="number" id="songId" placeholder="Song ID">
                 <input type="text" id="imagePath" placeholder="Image File (acu.png)">
             </form>
+            <hr>
+            <button type="submit" id="submitLevelButton">Submit</button>
         </div>
         <div id="traitSelector">
             <h2>Trait Selector</h2>
@@ -79,6 +81,7 @@
             <div class="traitOption" data-value="wave">Wave</div>
         </div>
     </div>
+    <p id="errorMessage">goon</p>
 </body>
 
 </html>
