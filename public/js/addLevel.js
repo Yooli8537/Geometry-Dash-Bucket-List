@@ -102,9 +102,19 @@ submitButton.addEventListener("click", async (e) => {
     traits: traits,
   };
 
-  await fetch("/data", {
+  const response = await fetch("/data", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(level),
   });
+
+  if (response.ok) {
+    errorMessage.textContent = "Level added to data successfully. You can view it on the homepage, may require a reload."
+  } else {
+    errorMessage.textContent = "Error: Failed to save level :("
+  }
+
+  // Resetting Form & Traits after successful addition
+  document.querySelector("#addLevelForm").reset();
+  document.querySelector(".traitOption").forEach(t => t.classList.remove("selected"));
 });
