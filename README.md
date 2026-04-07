@@ -1,5 +1,7 @@
 # Geometry Dash Bucket List
 
+This is a lightweight web application to keep track of Geometry Dash level that you want to beat & that you have beaten. Apart from the initial setup, no coding knowledge is required :)
+
 ## Setup
 
 This project was designed to run on a local Node.js server.
