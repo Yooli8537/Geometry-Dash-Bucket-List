@@ -2,15 +2,6 @@
 
 ## Planned
 
-- Info shown on Site:
--- #
--- Name
--- AREDL Placement
--- Best from 0
--- Total Attempts (Startpos + from 0)
--- Traits
--- Selection Reason
-
 - Detailed page when one is clicked on from the list
 
 - Markings (Outlines)
@@ -45,5 +36,14 @@
 -- Enjoyment Rating / 10
 -- Subcategory
 -- Lists it's shown on
+
+- Info shown on Site:
+-- #
+-- Name
+-- AREDL Placement
+-- Best from 0
+-- Total Attempts (Startpos + from 0)
+-- Traits
+-- Selection Reason
 
 - Subcategories shown on the Site
