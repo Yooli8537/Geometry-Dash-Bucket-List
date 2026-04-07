@@ -23,17 +23,24 @@
     <div class="formLayout">
         <div class="formInputs">
             <form id="addLevelForm">
+                <h2>Information</h2>
                 <input type="number" id="levelNum" placeholder="#">
                 <input type="number" id="levelGameId" placeholder="In-Game ID">
                 <input type="text" id="levelName" placeholder="Name">
-                <input type="number" id="placement" placeholder="AREDL Placement">
+                <input type="number" id="placement" placeholder="AREDL">
+                <h2>Stats</h2>
                 <input type="number" id="best" placeholder="Current Best">
                 <input type="number" id="attempts" placeholder="Attempts from 0">
                 <input type="number" id="startposAttempts" placeholder="Startpos attempts">
+                <input type="number" id="enjoyment" placeholder="Enjoyment">
+                <input type="date" id="starting_date">
+                <input type="date" id="ending_date">
                 <input type="text" id="reason" placeholder="Selection Reason">
-                <input type="date" id="starting_date" placeholder="Starting Date">
-                <input type="date" id="ending_date" placeholder="Ending Date">
-                <input type="number" id="enjoyment" placeholder="Enjoyment Rating / 10">
+                <h2>Lists</h2>
+                <select id="lists" multiple size="2">
+                    <option value="bucketList">Bucket List</option>
+                    <option value="beatenList">Beaten Demons List</option>
+                </select>
                 <select id="subcategory">
                     <option value="insaneDemons">Insane Demons</option>
                     <option value="firstExtremes">First Extremes</option>
@@ -42,18 +49,34 @@
                     <option value="listExtremes">List Extremes</option>
                     <option value="finalGoals">Final Goals</option>
                 </select>
-                <select id="lists" multiple>
-                    <option value="bucketList">Bucket List</option>
-                    <option value="beatenList">Beaten Demons List</option>
-                </select>
-                <input type="text" id="songName" placeholder="Song Name">
+                <h2>Cosmetics</h2>
+                <input type="text" id="songName" placeholder="Song Name - Artist">
                 <input type="number" id="songId" placeholder="Song ID">
                 <input type="text" id="imagePath" placeholder="Image File (acu.png)">
             </form>
         </div>
         <div id="traitSelector">
-            <h3>Traitselector</h3>
+            <h2>Trait Selector</h2>
+            <div class="traitOption" data-value="awkward">Awkward</div>
+            <div class="traitOption" data-value="classic">Classic</div>
+            <div class="traitOption" data-value="consistency">Consistency</div>
+            <div class="traitOption" data-value="cube">Cube</div>
+            <div class="traitOption" data-value="duals">Duals</div>
             <div class="traitOption" data-value="fast">Fast</div>
+            <div class="traitOption" data-value="flowy">Flowy</div>
+            <div class="traitOption" data-value="gimmiky">Gimmiky</div>
+            <div class="traitOption" data-value="intense">Intense</div>
+            <div class="traitOption" data-value="long">Long</div>
+            <div class="traitOption" data-value="memory">Memory</div>
+            <div class="traitOption" data-value="modern">Modern</div>
+            <div class="traitOption" data-value="nineCircles">Nine Circles</div>
+            <div class="traitOption" data-value="seizures">Seizures</div>
+            <div class="traitOption" data-value="ship">Ship</div>
+            <div class="traitOption" data-value="slow">Slow</div>
+            <div class="traitOption" data-value="spam">Spam</div>
+            <div class="traitOption" data-value="timings">Timings</div>
+            <div class="traitOption" data-value="vibes">Vibes</div>
+            <div class="traitOption" data-value="wave">Wave</div>
         </div>
     </div>
 </body>

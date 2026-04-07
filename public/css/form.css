@@ -4,14 +4,16 @@
 }
 
 .formInputs {
-  width: 85%;
+  width: 75%;
 }
 
 #traitSelector {
-  width: 10%;
+  width: 20%;
 }
 .traitOption {
-  display: inline-block;
+  display: block;
+  width: fit-content;
+  margin-bottom: 3px;
   padding: 0.5px 5px;
   border-radius: 3px;
   margin-right: 3px;
@@ -23,4 +25,73 @@
 
 .selected {
   opacity: 1;
+}
+
+#addLevelForm input {
+  font-size: medium;
+  color: #b5c8cf;
+  background-color: #1a1e24;
+  border: 1px solid #414b59;
+  margin: 2px;
+}
+
+#addLevelForm input::placeholder {
+  color: #0c6585;
+}
+
+select {
+  font-size: medium;
+  color: #b5c8cf;
+  background-color: #1a1e24;
+  border: 1px solid #414b59;
+  margin: 2px;
+  vertical-align: top;
+}
+
+#levelNum {
+  width: 5%;
+}
+
+#levelGameId {
+  width: 10%;
+}
+
+#levelName {
+  width: 20%;
+}
+
+#placement {
+  width: 10%;
+}
+
+#best {
+  width: 10%;
+}
+
+#attempts {
+  width: 12%;
+}
+
+#startposAttempts {
+  width: 13%;
+}
+
+#enjoyment {
+  width: 10%;
+}
+
+#reason {
+  width: 50%;
+}
+
+#songName {
+  width: 30%;
+}
+
+#songId {
+  width: 10%;
+}
+
+#imagePath {
+  width: 15%;
 }

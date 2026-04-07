@@ -1,4 +1,9 @@
+const insaneDemonsColumn = document.querySelector("#insaneDemons");
 const firstExtremesColumn = document.querySelector("#firstExtremes");
+const beginnerExtremesColumn = document.querySelector("#beginnerExtremes");
+const advancedExtremesColumn = document.querySelector("#advancedExtremes");
+const listExtremesColumn = document.querySelector("#listExtremes");
+const goalExtremesColumn = document.querySelector("#goalExtremes");
 
 async function loadLevels() {
   // Gets & Sorts data from data.json
@@ -55,8 +60,18 @@ async function loadLevels() {
 
     // Applying <tr> to correct category on HTML page
     const subcategory = level.subcategory;
-    if (subcategory === "firstExtremes") {
-        firstExtremesColumn.appendChild(tr);
+    if (subcategory === "insaneDemons") {
+      insaneDemonsColumn.appendChild(tr);
+    } else if (subcategory === "firstExtremes") {
+      firstExtremesColumn.appendChild(tr);
+    } else if (subcategory === "beginnerExtremes") {
+      beginnerExtremesColumn.appendChild(tr);
+    } else if (subcategory === "advancedExtremes") {
+      advancedExtremesColumn.appendChild(tr);
+    } else if (subcategory === "listExtremes") {
+      listExtremesColumn.appendChild(tr);
+    } else if (subcategory === "goalExtremes") {
+      goalExtremesColumn.appendChild(tr);
     }
   }
 }
