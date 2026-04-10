@@ -50,3 +50,20 @@ hr {
 .title {
   color: #4a6678;
 }
+
+a {
+  text-decoration: none;
+}
+
+.navButton {
+  display: block;
+  width: fit-content;
+  font-size: larger;
+  color: #b5c8cf;
+  background-color: #1a1e24;
+  border: 1px solid #414b59;
+  border-radius: 3px;
+  margin: 2px;
+  margin-right: 5px;
+  cursor: pointer;
+}
