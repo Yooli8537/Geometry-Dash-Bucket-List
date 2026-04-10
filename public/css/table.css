@@ -1,5 +1,6 @@
 table {
   table-layout: fixed;
+  border-collapse: collapse;
 }
 
 th,
@@ -7,8 +8,8 @@ td {
   text-align: left;
   font-size: medium;
   font-weight: lighter;
-  padding-top: 0.5%;
-  padding-bottom: 0.5%;
+  padding-top: 0.8%;
+  padding-bottom: 0.8%;
 }
 
 th {
@@ -83,4 +84,24 @@ th {
 
 .tableRow {
   cursor: pointer;
+}
+
+.complete {
+  border: 3px solid #09ff00;
+  background-color: #09ff0024;
+}
+
+.inProgress {
+  border: 3px solid #00ccff;
+  background-color: #00ccff24;
+}
+
+.lookingForward {
+  border: 3px solid #ffd900;
+  background-color: #ffd90024;
+}
+
+.finalGoal {
+  border: 3px solid #ff0000;
+  background-color: #ff000024;
 }

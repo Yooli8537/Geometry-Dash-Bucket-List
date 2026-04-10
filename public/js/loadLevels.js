@@ -34,7 +34,8 @@ async function loadLevels() {
     best.textContent = level.best + "%";
     // Total Attempts
     const attempts = document.createElement("td");
-    attempts.textContent = Number(level.attempts) + Number(level.startpos_attempts);
+    attempts.textContent =
+      Number(level.attempts) + Number(level.startpos_attempts);
     // Traits
     const traits = document.createElement("td");
     const traitsArray = level.traits;
@@ -57,6 +58,16 @@ async function loadLevels() {
     tr.appendChild(attempts);
     tr.appendChild(traits);
     tr.appendChild(reason);
+
+    if (level.status === "inProgress") {
+      tr.classList.add("inProgress");
+    } else if (level.status === "lookingForward") {
+      tr.classList.add("lookingForward");
+    } else if (level.status === "finalGoal") {
+      tr.classList.add("finalGoal");
+    } else if (level.best == 100) {
+      tr.classList.add("complete");
+    }
 
     // Applying <tr> to correct category on HTML page
     const subcategory = level.subcategory;

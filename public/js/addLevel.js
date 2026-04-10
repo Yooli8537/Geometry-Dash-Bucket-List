@@ -15,6 +15,7 @@ submitButton.addEventListener("click", async (e) => {
   const gameId = document.querySelector("#gameId").value;
   const name = document.querySelector("#name").value;
   const placement = document.querySelector("#placement").value;
+  const status = document.querySelector("#status").value;
   const best = document.querySelector("#best").value;
   const attempts = document.querySelector("#attempts").value;
   const startposAttempts = document.querySelector("#startposAttempts").value;
@@ -87,6 +88,7 @@ submitButton.addEventListener("click", async (e) => {
     game_id: gameId,
     name: name,
     aredl_placement: placement,
+    status: status,
     best: best,
     attempts: attempts,
     startpos_attempts: startposAttempts,
