@@ -5,7 +5,6 @@
 - Detailed page when one is clicked on from the list
 
 - Buttons for CRUD
--- Add new level to list
 -- Update level
 -- Easy update for things like attempt counts & bests
 -- Removing a level
@@ -47,3 +46,6 @@
 -- Blue = In progress
 -- Gold = Looking forward to; Levels that I'm excited to beat
 -- Red = Final Goals / Final Demons
+
+- Buttons for CRUD
+-- Add new level to list
