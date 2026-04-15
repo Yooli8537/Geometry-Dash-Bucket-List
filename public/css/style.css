@@ -56,7 +56,7 @@ a {
 }
 
 .navButton {
-  display: block;
+  display: inline-block;
   width: fit-content;
   font-size: larger;
   color: #b5c8cf;
@@ -66,4 +66,19 @@ a {
   margin: 2px;
   margin-right: 5px;
   cursor: pointer;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.box {
+  display: block;
+  width: fit-content;
+  padding-left: 3.5%;
+  padding-right: 3.5%;
+  padding-bottom: 1%;
+  padding-top: 1%;
+  margin: auto;
+  border: 5px solid #353d4c;
+  border-radius: 10px;
+  background-color: #000;
 }

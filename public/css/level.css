@@ -1,0 +1,88 @@
+#levelName {
+  font-size: 56px;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+  color: #f1f7fa;
+}
+
+#levelPlacement {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+  color: #7b8e9a;
+}
+
+#statusHeader {
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin-bottom: 1%;
+}
+
+.complete {
+  background: linear-gradient(to right, transparent, #09ff00, transparent);
+}
+
+.inProgress {
+  background: linear-gradient(to right, transparent, #00ccff, transparent);
+}
+
+.lookingForward {
+  background: linear-gradient(to right, transparent, #ffd900, transparent);
+}
+
+.finalGoal {
+  background: linear-gradient(to right, transparent, #ff0000, transparent);
+}
+
+.pageLayout {
+  display: flex;
+  gap: 5%;
+}
+
+#bg {
+  position: relative;
+  min-height: 75vh;
+}
+
+#bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -5vw;
+  right: -5vw;
+  bottom: 0;
+  background-image: url(../images/windy_landscape.png);
+  background-size: cover;
+  background-position: center;
+  -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+  mask-image: radial-gradient(ellipse 80% 80% at center, black 20%, transparent 75%);
+  z-index: -1;
+}
+
+.cosmeticColumn {
+  width: 20%;
+}
+
+.progressColumn {
+  width: 50%;
+}
+
+.infoColumn {
+  width: 20%;
+}
+
+.levelPageTitle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.levelDetail {
+  background-color: #0000009a;
+  font-size: x-large;
+  color: #b5d0ef;
+  padding: 4px;
+  border-radius: 8px;
+}
