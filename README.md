@@ -12,7 +12,7 @@ This project was designed to run on a local Node.js server.
 4. Clone repository using "git clone <https://github.com/Yooli8537/Geometry-Dash-Bucket-List>".
 5. Run the following commands in order:
 
-````
+```` node
     npm init -y
 
     npm install express
@@ -24,6 +24,7 @@ This project was designed to run on a local Node.js server.
 
 - Homepage for a quick overview of all the levels
 - Page to add levels
+- Detailed Level info page with all the information, can be accessed from the Homepage
 
 ## Planned Features / WIP
 
@@ -35,5 +36,4 @@ This project was designed to run on a local Node.js server.
 
 ### These features can not be done by the user at this stage in development.
 
-- Detailed Level info page with all the information
 - List of all the beaten levels

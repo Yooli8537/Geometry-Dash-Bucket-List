@@ -2,8 +2,6 @@
 
 ## Planned
 
-- Detailed page when one is clicked on from the list
-
 - Buttons for CRUD
 -- Update level
 -- Easy update for things like attempt counts & bests
@@ -49,3 +47,5 @@
 
 - Buttons for CRUD
 -- Add new level to list
+
+- Detailed page when one is clicked on from the list
