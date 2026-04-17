@@ -1,9 +1,15 @@
+// Viewing level Detail
+// Extracting ID from URL
+const params = new URLSearchParams(window.location.search);
+const id = params.get("id");
 const traitList = document.querySelector("#traitList");
+const statusHeader = document.querySelector("#statusHeader");
 
 async function loadLevelDetail() {
+  // Fetching correct level Data
   let response = await fetch("/data");
   let levelData = await response.json();
-  const level = levelData.find((l) => Number(l.game_id) === 676767);
+  const level = levelData.find((l) => Number(l.game_id) == id);
 
   // Level Display conditions
   const startingDate = new Date(level.starting_date);
@@ -33,6 +39,14 @@ async function loadLevelDetail() {
   document.querySelector("#subcategory").textContent =
     "Subcategory: " + level.subcategory;
 
+  // Correct Header Color
+  if (level.best == 100) {
+    statusHeader.classList.add("complete");
+  } else {
+    statusHeader.classList.add(level.status);
+  }
+
+  // Styling Traits
   for (i = 0; i < level.traits.length; i++) {
     trait = document.createElement("div");
     trait.classList.add("trait");
@@ -40,6 +54,11 @@ async function loadLevelDetail() {
     trait.textContent = level.traits[i];
     traitList.appendChild(trait);
   }
+
+  // Applying Background
+  document
+    .querySelector("#bg")
+    .style.setProperty("--bg-image", `url(../images/${level.screenshot_path})`);
 }
 
 loadLevelDetail();

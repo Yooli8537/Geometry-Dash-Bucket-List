@@ -18,6 +18,9 @@ async function loadLevels() {
     // Table Element
     const tr = document.createElement("tr");
     tr.classList.add("tableRow");
+    tr.addEventListener("click", () => {
+      window.location.href = `/pages/level.html?id=${level.game_id}`;
+    });
 
     // Data
     // Number
@@ -59,14 +62,14 @@ async function loadLevels() {
     tr.appendChild(traits);
     tr.appendChild(reason);
 
-    if (level.status === "inProgress") {
+    if (level.best == 100) {
+      tr.classList.add("complete");
+    } else if (level.status === "inProgress") {
       tr.classList.add("inProgress");
     } else if (level.status === "lookingForward") {
       tr.classList.add("lookingForward");
     } else if (level.status === "finalGoal") {
       tr.classList.add("finalGoal");
-    } else if (level.best == 100) {
-      tr.classList.add("complete");
     }
 
     // Applying <tr> to correct category on HTML page
