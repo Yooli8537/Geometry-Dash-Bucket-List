@@ -71,17 +71,17 @@ async function loadLevels() {
 
     // Applying <tr> to correct category on HTML page
     const subcategory = level.subcategory;
-    if (subcategory === "insaneDemons") {
+    if (subcategory === "Insane Demons") {
       insaneDemonsColumn.appendChild(tr);
-    } else if (subcategory === "firstExtremes") {
+    } else if (subcategory === "First Extremes") {
       firstExtremesColumn.appendChild(tr);
-    } else if (subcategory === "beginnerExtremes") {
+    } else if (subcategory === "Beginner Extremes") {
       beginnerExtremesColumn.appendChild(tr);
-    } else if (subcategory === "advancedExtremes") {
+    } else if (subcategory === "Advanced Extremes") {
       advancedExtremesColumn.appendChild(tr);
-    } else if (subcategory === "listExtremes") {
+    } else if (subcategory === "List Extremes") {
       listExtremesColumn.appendChild(tr);
-    } else if (subcategory === "goalExtremes") {
+    } else if (subcategory === "Final Goals") {
       goalExtremesColumn.appendChild(tr);
     }
   }

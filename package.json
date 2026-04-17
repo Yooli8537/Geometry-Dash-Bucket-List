@@ -1,7 +1,7 @@
 {
   "name": "gd_bucket_list",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a lightweight web application to keep track of Geometry Dash level that you want to beat & that you have beaten. Apart from the initial setup, no coding knowledge is required :)",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

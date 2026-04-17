@@ -57,7 +57,11 @@
   background-size: cover;
   background-position: center;
   -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
-  mask-image: radial-gradient(ellipse 80% 80% at center, black 20%, transparent 75%);
+  mask-image: radial-gradient(
+    ellipse 80% 80% at center,
+    black 20%,
+    transparent 75%
+  );
   z-index: -1;
 }
 
@@ -83,6 +87,12 @@
   background-color: #0000009a;
   font-size: x-large;
   color: #b5d0ef;
+  padding: 4px;
+  border-radius: 8px;
+}
+
+#traitList {
+  background-color: #0000009a;
   padding: 4px;
   border-radius: 8px;
 }
