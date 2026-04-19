@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/form.css">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Edit Level</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+</head>
+
+<body>
+    <div class="titleBox">
+        <p class="gd">Geometry Dash</p>
+        <p class="title">Bucket List</p>
+    </div>
+    <h3 id="editedLevelName">Editing Level</h3>
+    <a href="../index.html"><button class="navButton" type="button">Return Home</button></a>
+    <hr>
+
+    <div class="formLayout">
+        <div class="formInputs">
+            <form id="addLevelForm">
+                <h2>Information</h2>
+                <input type="number" id="num" placeholder="#">
+                <input type="number" id="gameId" placeholder="In-Game ID">
+                <input type="text" id="name" placeholder="Name">
+                <input type="number" id="placement" placeholder="AREDL">
+                <select id="status">
+                    <option value="none">None</option>
+                    <option value="inProgress">In Progress</option>
+                    <option value="lookingForward">Looking Forward</option>
+                    <option value="finalGoal">Final Goal</option>
+                </select>
+                <h2>Stats</h2>
+                <input type="number" id="best" placeholder="Best">
+                <input type="number" id="attempts" placeholder="Attempts from 0">
+                <input type="number" id="startposAttempts" placeholder="Startpos attempts">
+                <input type="number" id="enjoyment" placeholder="Enjoyment">
+                <input type="date" id="startingDate">
+                <input type="date" id="endingDate">
+                <input type="text" id="reason" placeholder="Selection Reason">
+                <h2>Lists</h2>
+                <select id="lists" multiple size="2">
+                    <option value="bucketList">Bucket List</option>
+                    <option value="beatenList">Beaten Demons List</option>
+                </select>
+                <select id="subcategory">
+                    <option value="none">No Subcategory selected</option>
+                    <option value="Insane Demons">Insane Demons</option>
+                    <option value="First Extremes">First Extremes</option>
+                    <option value="Beginner Extremes">Beginner Extremes</option>
+                    <option value="Advanced Extremes">Advanced Extremes</option>
+                    <option value="List Extremes">List Extremes</option>
+                    <option value="Final Goals">Final Goals</option>
+                </select>
+                <h2>Cosmetics</h2>
+                <input type="text" id="songName" placeholder="Song Name - Artist">
+                <input type="number" id="songId" placeholder="Song ID">
+                <input type="text" id="imagePath" placeholder="Image File (acu.png)">
+            </form>
+            <hr>
+            <button type="submit" id="submitLevelButton">Submit</button>
+        </div>
+        <div id="traitSelector">
+            <h2>Trait Selector</h2>
+            <div class="traitOption" data-value="awkward">Awkward</div>
+            <div class="traitOption" data-value="classic">Classic</div>
+            <div class="traitOption" data-value="consistency">Consistency</div>
+            <div class="traitOption" data-value="cube">Cube</div>
+            <div class="traitOption" data-value="duals">Duals</div>
+            <div class="traitOption" data-value="fast">Fast</div>
+            <div class="traitOption" data-value="flowy">Flowy</div>
+            <div class="traitOption" data-value="gimmiky">Gimmiky</div>
+            <div class="traitOption" data-value="intense">Intense</div>
+            <div class="traitOption" data-value="long">Long</div>
+            <div class="traitOption" data-value="memory">Memory</div>
+            <div class="traitOption" data-value="modern">Modern</div>
+            <div class="traitOption" data-value="nineCircles">Nine Circles</div>
+            <div class="traitOption" data-value="overall">Overall</div>
+            <div class="traitOption" data-value="seizures">Seizures</div>
+            <div class="traitOption" data-value="ship">Ship</div>
+            <div class="traitOption" data-value="slow">Slow</div>
+            <div class="traitOption" data-value="spam">Spam</div>
+            <div class="traitOption" data-value="timings">Timings</div>
+            <div class="traitOption" data-value="vibes">Vibes</div>
+            <div class="traitOption" data-value="wave">Wave</div>
+        </div>
+    </div>
+    <p id="errorMessage">No Errors.</p>
+</body>
+
+</html>
