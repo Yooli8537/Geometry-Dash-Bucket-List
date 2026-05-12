@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/form.css">
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700&display=swap" rel="stylesheet">
-    <title>Add Level</title>
-    <script src="../js/addLevel.js" defer></script>
+    <script type="module" src="../js/editLevel.js" defer></script>
+    <title>Edit Level</title>
     <link rel="icon" type="image/x-icon" href="../favicon.ico">
 </head>
 
@@ -17,8 +17,8 @@
         <p class="gd">Geometry Dash</p>
         <p class="title">Bucket List</p>
     </div>
-    <h3>Adding Level</h3>
-    <a href="../index.html"><button class="navButton" type="button">Return Home</button></a>
+    <h3 id="editingLevelName">Editing Level</h3>
+    <button id="backButton" class="navButton" type="button">Back</button>
     <hr>
 
     <div class="formLayout">
@@ -34,6 +34,7 @@
                     <option value="inProgress">In Progress</option>
                     <option value="lookingForward">Looking Forward</option>
                     <option value="finalGoal">Final Goal</option>
+                    <option value="finished">Finished</option>
                 </select>
                 <h2>Stats</h2>
                 <input type="number" id="best" placeholder="Best">
@@ -68,13 +69,15 @@
         <div id="traitSelector">
             <h2>Trait Selector</h2>
             <div class="traitOption" data-value="awkward">Awkward</div>
+            <div class="traitOption" data-value="ball">Ball</div>
+            <div class="traitOption" data-value="chokey">Chokey</div>
             <div class="traitOption" data-value="classic">Classic</div>
             <div class="traitOption" data-value="consistency">Consistency</div>
             <div class="traitOption" data-value="cube">Cube</div>
             <div class="traitOption" data-value="duals">Duals</div>
             <div class="traitOption" data-value="fast">Fast</div>
             <div class="traitOption" data-value="flowy">Flowy</div>
-            <div class="traitOption" data-value="gimmiky">Gimmiky</div>
+            <div class="traitOption" data-value="gimmicky">Gimmicky</div>
             <div class="traitOption" data-value="intense">Intense</div>
             <div class="traitOption" data-value="long">Long</div>
             <div class="traitOption" data-value="memory">Memory</div>
@@ -84,6 +87,7 @@
             <div class="traitOption" data-value="seizures">Seizures</div>
             <div class="traitOption" data-value="ship">Ship</div>
             <div class="traitOption" data-value="slow">Slow</div>
+            <div class="traitOption" data-value="sync">Sync</div>
             <div class="traitOption" data-value="spam">Spam</div>
             <div class="traitOption" data-value="timings">Timings</div>
             <div class="traitOption" data-value="vibes">Vibes</div>

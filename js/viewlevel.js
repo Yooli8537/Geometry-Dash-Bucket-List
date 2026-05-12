@@ -4,12 +4,17 @@ const params = new URLSearchParams(window.location.search);
 const id = params.get("id");
 const traitList = document.querySelector("#traitList");
 const statusHeader = document.querySelector("#statusHeader");
+const editButton = document.querySelector("#editButton");
 
 async function loadLevelDetail() {
   // Fetching correct level Data
   let response = await fetch("/data");
   let levelData = await response.json();
   const level = levelData.find((l) => Number(l.game_id) == id);
+
+  editButton.addEventListener("click", () => {
+    window.location.href = `/pages/edit.html?id=${level.game_id}`;
+  });
 
   // Level Display conditions
   const startingDate = new Date(level.starting_date);

@@ -13,7 +13,9 @@
 .modern,
 .vibes,
 .seizures,
-.overall {
+.overall,
+.sync,
+.ball {
   color: #597094;
   background-color: #1a1e24;
   border: 2px solid #2f415c;
@@ -23,7 +25,7 @@
 .memory,
 .awkward,
 .slow,
-.gimmiky {
+.gimmicky {
   color: #06963e;
   background-color: #062612;
   border: 2px solid #09612b;
@@ -32,6 +34,7 @@
 .duals,
 .spam,
 .fast,
+.chokey,
 .long,
 .intense,
 .consistency,

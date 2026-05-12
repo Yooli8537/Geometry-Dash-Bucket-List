@@ -4,7 +4,7 @@ const fs = require('fs');
 const path = require('path');
 
 const app = express();
-const PORT = 3000;
+const PORT = 6000;
 
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));

@@ -62,7 +62,7 @@ async function loadLevels() {
     tr.appendChild(traits);
     tr.appendChild(reason);
 
-    if (level.best == 100) {
+    if (level.best == 100 || level.status === "finished") {
       tr.classList.add("complete");
     } else if (level.status === "inProgress") {
       tr.classList.add("inProgress");
