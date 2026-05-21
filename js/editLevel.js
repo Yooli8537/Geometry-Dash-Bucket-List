@@ -1,5 +1,3 @@
-import { getData } from "./utils";
-
 const submitButton = document.querySelector("#submitLevelButton");
 const errorMessage = document.querySelector("#errorMessage");
 const backButton = document.querySelector("#backButton");
