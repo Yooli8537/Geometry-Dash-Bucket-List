@@ -12,7 +12,7 @@ async function loadLevels() {
   levelData.sort((a, b) => a.num - b.num);
 
   // Loop that puts the levels where they belong
-  for (i = 0; i < levelData.length; i++) {
+  for (let i = 0; i < levelData.length; i++) {
     const level = levelData[i];
 
     // Table Element
@@ -42,7 +42,7 @@ async function loadLevels() {
     // Traits
     const traits = document.createElement("td");
     const traitsArray = level.traits;
-    for (j = 0; j < traitsArray.length; j++) {
+    for (let j = 0; j < traitsArray.length; j++) {
       const trait = document.createElement("div");
       trait.classList.add("trait");
       trait.classList.add(traitsArray[j]); // Adds the value of a trait as a class
