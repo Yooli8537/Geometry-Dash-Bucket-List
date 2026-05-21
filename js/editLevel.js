@@ -79,53 +79,77 @@ document.querySelectorAll(".traitOption").forEach((trait) => {
 submitButton.addEventListener("click", async (e) => {
   e.preventDefault();
 
+  const data = getData();
+
   // Checking required Fields
   const requiredFields = [
-    { value: num, label: "Num" },
-    { value: gameId, label: "Game ID" },
-    { value: name, label: "Name" },
-    { value: placement, label: "Placement" },
-    { value: best, label: "Best" },
-    { value: attempts, label: "Attempts from 0" },
-    { value: startposAttempts, label: "Startpos Attempts" },
-    { value: reason, label: "Reason" },
-    { value: lists, label: "Lists" },
-    { value: subcategory, label: "Subcategory" },
-    { value: songName, label: "Song Name" },
-    { value: imagePath, label: "Image Path" },
+    { value: data.num, label: "Num" },
+    { value: data.gameId, label: "Game ID" },
+    { value: data.name, label: "Name" },
+    { value: data.placement, label: "Placement" },
+    { value: data.best, label: "Best" },
+    { value: data.attempts, label: "Attempts from 0" },
+    { value: data.startposAttempts, label: "Startpos Attempts" },
+    { value: data.reason, label: "Reason" },
+    { value: data.lists, label: "Lists" },
+    { value: data.subcategory, label: "Subcategory" },
+    { value: data.songName, label: "Song Name" },
+    { value: data.imagePath, label: "Image Path" },
   ];
 
   for (const field of requiredFields) {
     if (field.value === "" || field.value === null) {
       errorMessage.textContent = `Error: ${field.label} is empty.`;
       return;
-    } else if (lists.length < 1) {
+    } else if (data.lists.length < 1) {
       errorMessage.textContent = "Error: No Lists selected.";
       return;
-    } else if (subcategory === "none") {
+    } else if (data.subcategory === "none") {
       errorMessage.textContent = "Error: No Subcategory selected.";
       return;
+    } else if (data.traits.length < 1 || data.traits.length > 7) {
+      errorMessage.textContent = `You can only select between one and seven traits.`;
     }
   }
 
   // Checking Values
-  if (num < 0) {
+  if (data.num < 0) {
     errorMessage.textContent = `Error: Num (${num}) is a negative value.`;
-  } else if (gameId < 0) {
+  } else if (data.gameId < 0) {
     errorMessage.textContent = `Error: Game ID (${gameId}) is a negative value.`;
-  } else if (best < 0) {
+  } else if (data.best < 0) {
     errorMessage.textContent = `Error: Best (${best}) is a negative value.`;
-  } else if (attempts < 0) {
+  } else if (data.attempts < 0) {
     errorMessage.textContent = `Error: Attempts (${attempts}) is a negative value.`;
-  } else if (startposAttempts < 0) {
+  } else if (data.startposAttempts < 0) {
     errorMessage.textContent = `Error: Startpos Attempts (${startposAttempts}) is a negative value.`;
-  } else if (enjoyment < 0 || enjoyment > 10) {
+  } else if (data.enjoyment < 0 || enjoyment > 10) {
     errorMessage.textContent = "Enjoyment must be between 0 and 10";
-  } else if (traits.length < 1 || traits.length > 7) {
-    errorMessage.textContent = `You can only select between one and seven traits.`;
   } else {
     errorMessage.textContent = "No Errors.";
   }
+
+  // Creating updated JSON
+  const level = {
+    num: data.num,
+    game_id: data.gameId,
+    name: data.name,
+    aredl_placement: data.placement,
+    status: data.status,
+    best: data.best,
+    attempts: data.attempts,
+    startpos_attempts: data.startposAttempts,
+    enjoyment_rating: data.enjoyment,
+    starting_date: data.startingDate,
+    ending_date: data.endingDate,
+    reason: data.reason,
+    lists: data.lists,
+    subcategory: data.subcategory,
+    song: data.songName,
+    song_id: data.songId,
+    screenshot_path: data.imagePath,
+    traits: data.traits,
+  };
 
   const response = await fetch("/data", {
     method: "POST",
