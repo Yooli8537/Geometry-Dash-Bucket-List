@@ -14,6 +14,10 @@ if (!fs.existsSync("data.json")) {
   fs.writeFileSync("data.json", "[]");
 }
 
+if (!fs.existsSync("images")) {
+  fs.mkdirSync("images");
+}
+
 // GET request
 app.get('/data', (req, res) => {
   const data = fs.readFileSync('data.json', 'utf-8');
