@@ -52,8 +52,8 @@ async function loadLevelDetail() {
   }
 
   // Styling Traits
-  for (i = 0; i < level.traits.length; i++) {
-    trait = document.createElement("div");
+  for (let i = 0; i < level.traits.length; i++) {
+    const trait = document.createElement("div");
     trait.classList.add("trait");
     trait.classList.add(level.traits[i]);
     trait.textContent = level.traits[i];
