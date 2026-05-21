@@ -1,3 +1,5 @@
+import { getData } from "./utils";
+
 const submitButton = document.querySelector("#submitLevelButton");
 const errorMessage = document.querySelector("#errorMessage");
 const backButton = document.querySelector("#backButton");
@@ -124,4 +126,10 @@ submitButton.addEventListener("click", async (e) => {
   } else {
     errorMessage.textContent = "No Errors.";
   }
+
+  const response = await fetch("/data", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(level),
+  });
 });
