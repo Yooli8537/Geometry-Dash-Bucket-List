@@ -82,14 +82,3 @@ a {
   border-radius: 10px;
   background-color: #000;
 }
-
-.trashIcon {
-  height: 80%;
-  filter: invert(0.6);
-  display: none;
-}
-
-.deleteCell {
-  text-align: center;
-  vertical-align: middle;
-}

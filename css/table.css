@@ -44,8 +44,19 @@ th {
   width: 30%;
 }
 
-.deleteButtonColumn {
-  width: 0%;
+#deleteButtonColumn {
+  width: 3%;
+}
+
+.deleteCell {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.trashIcon {
+  height: 80%;
+  filter: invert(0.6);
+  display: none;
 }
 
 .divider {
@@ -88,6 +99,10 @@ th {
 
 .tableRow {
   cursor: pointer;
+}
+
+.tableRow:hover .trashIcon {
+  display: flex;
 }
 
 .complete {
