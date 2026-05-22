@@ -17,7 +17,11 @@ This project was designed to run on a local Node.js server.
 
     npm install express
 
-    node server.js
+    npm install vite
+
+    npm install concurrently
+
+    npm run dev
 ````
 
 ## Features
