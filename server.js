@@ -41,7 +41,7 @@ app.put("/data", (req, res) => {
   const data = JSON.parse(fs.readFileSync("data.json", "utf-8"));
   const index = data.findIndex((data) => data.game_id === updateId);
 
-  if (index <= 0) {
+  if (index < 0) {
     return res.status(404).json({ error: "Level not found" });
   }
 
