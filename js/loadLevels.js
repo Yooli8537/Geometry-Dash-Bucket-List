@@ -59,6 +59,12 @@ async function loadLevels() {
     deleteButton.src = "../assets/trash.svg";
     deleteButton.classList.add("trashIcon");
 
+    deleteButton.addEventListener("click", async (e) => {
+      e.stopPropagation();
+
+      console.log("DELETE");
+    });
+
     deleteCell.appendChild(deleteButton);
 
     // Applying data to parent element

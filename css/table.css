@@ -102,7 +102,7 @@ th {
 }
 
 .tableRow:hover .trashIcon {
-  display: flex;
+  display: inline;
 }
 
 .complete {
