@@ -52,6 +52,14 @@ async function loadLevels() {
     // Selection Reason
     const reason = document.createElement("td");
     reason.textContent = level.reason;
+    // Delete Button
+    const deleteCell = document.createElement("td");
+    deleteCell.classList.add("deleteCell");
+    const deleteButton = document.createElement("img");
+    deleteButton.src = "../assets/trash.svg";
+    deleteButton.classList.add("trashIcon");
+
+    deleteCell.appendChild(deleteButton);
 
     // Applying data to parent element
     tr.appendChild(num);
@@ -61,6 +69,7 @@ async function loadLevels() {
     tr.appendChild(attempts);
     tr.appendChild(traits);
     tr.appendChild(reason);
+    tr.appendChild(deleteCell);
 
     if (level.best == 100 || level.status === "finished") {
       tr.classList.add("complete");
