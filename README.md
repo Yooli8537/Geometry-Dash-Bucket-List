@@ -25,15 +25,5 @@ This project was designed to run on a local Node.js server.
 - Homepage for a quick overview of all the levels
 - Page to add levels
 - Detailed Level info page with all the information, can be accessed from the Homepage
-
-## Planned Features / WIP
-
-### The following functions can be done by the user by modifying the data.json file, but it's inconvenient.
-
-- Quick Edit for things like attempts & new bests
-- Dedicated editing page for the full level info
-- Removing levels
-
-### These features can not be done by the user at this stage in development.
-
-- List of all the beaten levels
+- Easily edit levels from their info page
+- Easily delete levels
