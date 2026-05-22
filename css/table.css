@@ -44,8 +44,8 @@ th {
   width: 30%;
 }
 
-#deleteButtonColumn {
-  width: 5%;
+.deleteButtonColumn {
+  width: 0%;
 }
 
 .divider {
