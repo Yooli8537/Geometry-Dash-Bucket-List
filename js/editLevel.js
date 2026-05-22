@@ -156,4 +156,8 @@ submitButton.addEventListener("click", async (e) => {
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(level),
   });
+
+  if (response.ok) {
+    errorMessage.textContent = "Successfully updated Level."
+  }
 });
