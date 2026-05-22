@@ -152,7 +152,7 @@ submitButton.addEventListener("click", async (e) => {
   };
 
   const response = await fetch("/data", {
-    method: "POST",
+    method: "PUT",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(level),
   });
