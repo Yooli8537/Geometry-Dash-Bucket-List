@@ -50,6 +50,22 @@ app.put("/data", (req, res) => {
   res.json({ success: true });
 });
 
+// DELETE request
+app.delete("/data", (req, res) => {
+  const deleteId = req.body.game_id;
+
+  const data = JSON.parse(fs.readFileSync("data.json", "utf-8"));
+  const index = data.findIndex((data) => data.game_id === deleteId);
+
+  if (index < 0) {
+    return res.status(404).json({ error: "Level not found" });
+  }
+
+  data.splice(index, 1);
+  fs.writeFileSync("data.json", JSON.stringify(data, null, 2));
+  res.json({ success: true });
+});
+
 // Confirmation message on Server start
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);

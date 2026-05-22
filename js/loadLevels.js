@@ -63,6 +63,16 @@ async function loadLevels() {
       e.stopPropagation();
 
       console.log("DELETE");
+
+      const response = await fetch("/data", {
+        method: "DELETE",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ game_id: level.game_id }),
+      });
+
+      if (response.ok) {
+        location.reload();
+      }
     });
 
     deleteCell.appendChild(deleteButton);
