@@ -1,8 +1,8 @@
 export default {
   server: {
     proxy: {
-      "/data": "http://localhost:6000",
+      "/data": "http://localhost:8520",
     },
-    port: 6001,
+    port: 8521,
   },
 };
