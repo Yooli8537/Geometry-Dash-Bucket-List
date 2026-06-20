@@ -68,5 +68,5 @@ app.delete("/data", (req, res) => {
 
 // Confirmation message on Server start
 app.listen(PORT, () => {
-  console.log(`Server running at http://localhost:${PORT}`);
+  console.log(`Geometry Dash Bucket List running at http://localhost:${PORT}`);
 });
