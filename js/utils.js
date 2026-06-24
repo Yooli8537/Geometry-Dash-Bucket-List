@@ -27,3 +27,10 @@ export function getData() {
 
   return data;
 }
+
+// Building Modals
+// Pattern: createModal(false, false, "Are you sure you want to delete this item?", "Cancel", "Delete Permanently")
+export function createModal(containsText, usesIcons, content, cancel, confirm) {
+  const modalBody = document.createElement("div");
+  modalBody.classList.add("modalBody");
+}
