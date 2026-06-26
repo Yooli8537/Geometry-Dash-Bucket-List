@@ -5,11 +5,7 @@ const fs = require("fs");
 const path = require("path");
 
 const app = express();
-<<<<<<< HEAD
 const PORT = 8520;
-=======
-const PORT = 8564;
->>>>>>> 1e38cf2a365e67e8409f98d1db28c0f5decf9de4
 
 app.use(express.json());
 app.use(express.static(path.join(__dirname, "public")));
